@@ -1,4 +1,4 @@
-# $Id: request.t,v 1.1.1.1 2002/09/28 22:49:26 comdog Exp $
+# $Id: request.t,v 1.2 2004/09/08 00:03:46 comdog Exp $
 use strict;
 
 BEGIN {
@@ -17,4 +17,4 @@ my $request = Apache::FakeRequest->new();
 isa_ok( $request, 'Apache::FakeRequest' );
 
 my $status = Apache::iTunes::handler( $request ); 
-is( $status, OK );
+is( $status, OK, "Returns OK status" );
