@@ -1,4 +1,4 @@
-# $Id: iTunes.pm,v 1.1.1.1 2002/09/28 22:49:26 comdog Exp $
+# $Id: iTunes.pm,v 1.2 2002/09/30 08:07:27 comdog Exp $
 package Apache::iTunes;
 use strict;
 
@@ -9,7 +9,7 @@ use Apache::Util qw(unescape_uri);;
 use Mac::iTunes;
 use Text::Template;
 
-$VERSION = 0.05;
+$VERSION = 0.06;
 
 =head1 NAME
 
@@ -115,6 +115,12 @@ The URL to the mod_perl handler so it can reference itself.
 The location of the template file.
 
 =back
+
+=head1 TO DO
+
+* even though this is mod_perl, Mac::iTunes is still pretty slow.
+when i get to the optimization stage, Mac::iTunes will get faster
+and so will this.
 
 =head1 AUTHOR
 
