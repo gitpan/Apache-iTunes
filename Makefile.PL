@@ -1,11 +1,11 @@
-# $Id: Makefile.PL,v 1.4 2006/05/18 03:10:35 comdog Exp $
+# $Id: Makefile.PL,v 1.5 2006/05/18 03:16:36 comdog Exp $
 use ExtUtils::MakeMaker;
 
 eval "use Test::Manifest 1.13";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
-	'VERSION'       => '0.08',
+	'VERSION'       => '0.09',
 	
     'PM'            => {
 		'lib/iTunes.pm'       => '$(INST_LIBDIR)/iTunes.pm',
