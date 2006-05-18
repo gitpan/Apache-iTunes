@@ -1,4 +1,4 @@
-# $Id: iTunes.pm,v 1.4 2004/09/08 00:04:18 comdog Exp $
+# $Id: iTunes.pm,v 1.5 2006/05/18 03:10:35 comdog Exp $
 package Apache::iTunes;
 use strict;
 
@@ -138,7 +138,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2002 -2004 brian d foy, All rights reserved
+Copyright 2002 -2006 brian d foy, All rights reserved
 
 =cut
 
