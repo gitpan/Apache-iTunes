@@ -1,4 +1,4 @@
-# $Id: iTunes.pm,v 1.5 2006/05/18 03:10:35 comdog Exp $
+# $Id: iTunes.pm,v 1.7 2007/01/10 05:04:31 comdog Exp $
 package Apache::iTunes;
 use strict;
 
@@ -9,7 +9,7 @@ use Apache::Util qw(unescape_uri);;
 use Mac::iTunes;
 use Text::Template;
 
-$VERSION = 0.06;
+$VERSION = 0.08;
 
 =head1 NAME
 
@@ -136,9 +136,11 @@ members of the project can shepherd this module appropriately.
 
 brian d foy, C<< <bdfoy@cpan.org> >>
 
-=head1 COPYRIGHT
+=head1 COPYRIGHT AND LICENSE
 
-Copyright 2002 -2006 brian d foy, All rights reserved
+Copyright (c) 2002-2007, brian d foy, All Rights Reserved.
+
+You may redistribute this under the same terms as Perl itself.
 
 =cut
 
