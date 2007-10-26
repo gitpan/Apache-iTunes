@@ -1,4 +1,4 @@
-# $Id: request.t,v 1.2 2004/09/08 00:03:46 comdog Exp $
+# $Id: request.t 1427 2004-09-08 00:03:46Z comdog $
 use strict;
 
 BEGIN {

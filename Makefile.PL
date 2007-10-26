@@ -1,12 +1,15 @@
-# $Id: Makefile.PL,v 1.7 2007/01/10 05:04:31 comdog Exp $
+# $Id: Makefile.PL 2331 2007-10-26 02:30:12Z comdog $
 use ExtUtils::MakeMaker;
 
 eval "use Test::Manifest 1.14";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
-	'VERSION'       => '0.10',
+	'ABSTRACT'      => 'control iTunes from mod_perl',
+
+	'VERSION'       => '0.11',
 	'LICENSE'       => 'perl',
+	'AUTHOR'        => 'brian d foy <bdfoy@cpan.org>',
 	
     'PM'            => {
 		'lib/iTunes.pm'       => '$(INST_LIBDIR)/iTunes.pm',
@@ -19,6 +22,7 @@ WriteMakefile(
 		'Mac::iTunes'         => '0',
 		'Test::More'          => '0',
 		'Text::Template'      => '0',
+		'Test::Manifest'      => '1.14',
 		},
 
 	'MAN3PODS'  => {

@@ -1,4 +1,4 @@
-# $Id: iTunes.pm,v 1.7 2007/01/10 05:04:31 comdog Exp $
+# $Id: iTunes.pm 2331 2007-10-26 02:30:12Z comdog $
 package Apache::iTunes;
 use strict;
 
@@ -9,7 +9,7 @@ use Apache::Util qw(unescape_uri);;
 use Mac::iTunes;
 use Text::Template;
 
-$VERSION = 0.08;
+$VERSION = 0.09;
 
 =head1 NAME
 
@@ -160,7 +160,8 @@ sub handler
 	{
 	my $r = shift;
 
-	my( undef, $command, @path_info )= split m|/|, $r->path_info;
+	my( undef, $command, @path_info )= split m|/|, ( $r->path_info || '' );
+	$command = '' unless $command; # silence warning
 	@path_info = map { unescape_uri( $_ ) } @path_info;
 
 	my %params = $r->args;
