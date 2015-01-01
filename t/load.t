@@ -1,4 +1,4 @@
-# $Id: load.t 1425 2004-09-07 23:52:42Z comdog $
+# $Id$
 
 BEGIN {
 	@classes = qw(Apache::iTunes);

@@ -1,4 +1,3 @@
-# $Id: iTunes.pm 2331 2007-10-26 02:30:12Z comdog $
 package Apache::iTunes;
 use strict;
 
@@ -9,7 +8,7 @@ use Apache::Util qw(unescape_uri);;
 use Mac::iTunes;
 use Text::Template;
 
-$VERSION = 0.09;
+$VERSION = 0.12;
 
 =head1 NAME
 
@@ -30,6 +29,10 @@ Apache::iTunes - control iTunes from mod_perl
 =head1 DESCRIPTION
 
 THIS IS ALPHA SOFTWARE.
+
+This module is currently unmaintained. If you want to take over
+the care and feeding, write to modules@perl.org.
+
 
 I am still developing Mac::iTunes, and this module depends
 mostly on that.  This handler does most of the stuff I need
@@ -124,15 +127,14 @@ and so will this.
 
 =head1 SOURCE AVAILABILITY
 
-This source is part of a SourceForge project which always has the
-latest sources in CVS, as well as all of the previous releases.
+This source is in GitHub
 
-	http://sourceforge.net/projects/brian-d-foy/
-
-If, for some reason, I disappear from the world, one of the other
-members of the project can shepherd this module appropriately.
+	https://github.com/CPAN-Adopt-Me/Apache-iTunes
 
 =head1 AUTHOR
+
+This module is currently unmaintained. If you want to take over
+the care and feeding, write to modules@perl.org.
 
 brian d foy, C<< <bdfoy@cpan.org> >>
 
